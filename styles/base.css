@@ -1,0 +1,182 @@
+/* Colors */
+:root {
+  --primary-color: rgb(10, 11, 11);
+  --secondary-color: #025598;
+  --hover-color: rgb(244, 244, 244);
+}
+
+/* Apply fonts */
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+p,
+figcaption,
+span,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  padding: 15px;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer p {
+  padding: 10px;
+  margin: 0px;
+  text-align: justify;
+}
+
+header {
+  margin: 0px 0px 0px 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.card {
+  height: 95%;
+  padding: 0px 25px 25px 25px;
+  border: 1px lightgray solid;
+  border-radius: 2%;
+  background: linear-gradient(to bottom,
+      var(--primary-color),
+      var(--primary-color) 4rem,
+      transparent 1rem,
+      transparent 100%);
+}
+
+main {
+  margin: 25px 15px 25px 15px;
+  min-height: 600px;
+  max-width: 98%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+
+#about-me {
+  grid-column: 1 / 3;
+}
+
+#web-dev-resources {
+  grid-column: 3 / 4;
+}
+
+#bio {
+  margin-top: 30px;
+  display: flex;
+}
+
+#country-info {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  #country-info {
+    display: block;
+  }
+
+  figcaption {
+    text-align: justify !important;
+    padding-left: 30px;
+  }
+}
+
+#list {
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  color: blue;
+  text-decoration: underline;
+}
+
+li a:visited {
+  color: purple;
+}
+
+p {
+  padding: 20px;
+  text-align: justify;
+}
+
+img {
+  margin: 20px;
+  border: 1px gray solid;
+  height: 200px;
+}
+
+h2 {
+  text-align: center;
+  margin: 25px 0px 0px 0px;
+}
+
+.card h2 {
+  color: white;
+}
+
+span {
+  padding: 10px;
+  text-align: justify;
+  display: block;
+}
+
+noscript {
+  padding: 20px;
+}
+
+figcaption {
+  text-align: justify;
+  font-style: italic;
+}
+
+#location-title {
+  color: black;
+}
